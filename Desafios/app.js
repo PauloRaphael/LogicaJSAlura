@@ -67,34 +67,86 @@
 
 //Start-------------------------------------
 
-let contador = 0;
+// let contador = 0;
 
-while(contador < 10){
-    contador++;
-    console.log(contador);
-}
+// while(contador < 10){
+//     contador++;
+//     console.log(contador);
+// }
 
-contador++;
+// contador++;
 
-while(contador > 1) {
-    contador--;
-    console.log(contador);
-}
+// while(contador > 1) {
+//     contador--;
+//     console.log(contador);
+// }
 
-contador = prompt('Digite um número');
+// contador = prompt('Digite um número');
 
-while(contador > 0) {
-    console.log(contador);
-    contador--;
-}
+// while(contador > 0) {
+//     console.log(contador);
+//     contador--;
+// }
 
-contador = prompt('Digite um número');
-numero = 0;
+// contador = prompt('Digite um número');
+// numero = 0;
 
-while(numero < contador) {
-    numero++;
+// while(numero < contador) {
+//     numero++;
+//     console.log(numero);
+// }
+
+//End---------------------------------------
+
+//FORTH CHALLENGE
+
+//Start-------------------------------------
+
+console.log('Sejá bem vindo!');
+
+let nome = prompt('digire seu nome');
+
+console.log(`Olá, ${nome}!`);
+
+alert(`Olá, ${nome}!`);
+
+let favProgrammingLanguage = prompt('Qual a linguagem de programação que você mais gosta?');
+
+console.log(favProgrammingLanguage);
+
+let valor1 = 5;
+let valor2 = 10;
+let resultado = valor1 + valor2;
+
+console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}.`);
+
+resultado = valor1 - valor2;
+
+console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}.`);
+
+let idade = prompt('Digite sua idade');
+
+console.log(`Você é ${idade >= 18 ? 'maior' : 'menor'} de idade`);
+
+let numero = prompt('Digite um número');
+
+console.log(`Esse número é ${numero >= 0 ? 'positivo' : 'negativo'}`);
+
+numero = 1;
+
+while(numero <= 10) {
     console.log(numero);
+    numero++;
 }
 
+let nota = 8;
+
+console.log(`${nota >= 7 ? 'Aprovado' : 'Reprovado'}`);
+
+console.log(Math.random());
+
+console.log(parseInt(Math.random() * 10 + 1));
+
+console.log(parseInt(Math.random() * 1000 + 1));
 
 //End---------------------------------------
