@@ -1,5 +1,5 @@
 alert('Boas vindas ao jogo do número secreto!');
-let numeroSecreto = 9;
+let numeroSecreto = 5;
 console.log(numeroSecreto)
 let chute;
 let tentativas = 1;
@@ -12,16 +12,14 @@ while (chute != numeroSecreto) {
         break;
     } else {
         if (chute > numeroSecreto) {
-            alert(`O número secreto é maior que ${chute}`);
+            alert(`O número secreto é menor que ${chute}`);
         } else {
-            alert(`O número secreto é menos que ${chute}`);
+            alert(`O número secreto é maior que ${chute}`);
         }
     }
     tentativas++;
 }
 
-if(tentativas > 1) {
-    alert(`isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativa.`);
-} else {
-    alert(`isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas.`);
-}
+let palavarTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'
+
+alert(`isso ai! Você descobriu o numero secreto ${numeroSecreto} com ${tentativas} ${palavarTentativa}.`);
